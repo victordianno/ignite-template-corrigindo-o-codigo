@@ -38,8 +38,6 @@ app.put("/repositories/:id", (request, response) => {
     return response.status(404).json({ error: "Repository not found" });
   }
   
-console.log(url);
-
   if (title)
   {
     repository.title = title;
